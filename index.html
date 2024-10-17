@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online travel agency</title>
+    <link rel="stylesheet"href="Phase_2.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body onload="window.open('Payment.html')">
+    <div class="container-fluid">
+        <nav class="nav_1">
+            <div class="logo"></div>
+            <div class="Home">
+               <select id="select_1" onchange="this.options[this.selectedIndex].value && (window.location=this.options[this.selectedIndex].value);">
+                <option>Home</option>
+                <option value="#homes_links">Hotels</a></option>
+                <option value="Payment.html">Payment</option>
+               </select> 
+            </div>
+            <div class="Home">
+                <select id="select_1">
+                 <option>Transport</option>
+                 <option>Rental Cars</option>
+                 <option>Railways</option>
+                 <option>Buses</option>
+                 <option>Aeroplanes</option>
+                </select> 
+             </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"id="Search_1"></i>
+                <input type="text"placeholder="Search for places"id="Search_2">
+            </div>
+            <div class="btn_1"><button id="one"onclick="openForm()">Login</button></div>
+                <div class="form-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="xyz@gmail.com" name="email" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                </script>   
+            <div class="btn_2"><button id="two"onclick="openForm_1()">Sign-Up</button></div>
+            <div class="form-popup"id="myForm_1">
+                <form action="/action_pahe.php" class="form-container">
+                    <label for="Name"><b>Name</b></label>
+                    <input type="text"placeholder="Enter Name" name="name" required>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text"placeholder="xyz@gmail.com"name="email"required>
+                    <label for="password"><b>Create Password</b></label>
+                    <input type="password"placeholder="Create Password"name="psw"required>
+                    <label for="password"><b>Confirm Password</b></label>
+                    <input type="password"placeholder="Confirm Password"name="psw"required>
+                    <button type="submit"class="btn">Register</button>
+                    <button type="button"class="btn cancel"onclick="closeForm_1()">Close</button>
+                </form>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-phone"id="contact_1"></i>
+                <a href="#C_1"id="three">Contact-Us</a></div>
+                <div class="cart"><a href="#"id="link_1"><i class="fa-solid fa-cart-shopping"title="Your cart is empty"></i></a></div>
+        </nav>
+         <!--Main--Page-->
+        <div class="main_page"id="Main">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <div class="slide"id="slide_1">
+                        <h1><q>With Age,comes wisdom.With travel,comes Understanding.</q></h1>
+                    </div>
+                    <div class="slide"id="slide_2">
+                        <h1><q>A journey of a thousand miles must begin with a single step.</q></h1>
+                    </div>
+                    <div class="slide"id="slide_3">
+                        <h1><q>Tourists don’t know where they’ve been, travelers don’t know where they’re going.</q></h1>
+                    </div>
+                    <div class="slide"id="slide_4">
+                        <h1><q>Once a year, go somewhere you’ve never been before.</q></h1>
+                    </div>
+                    <div class="slide"id="slide_5">
+                        <h1>Find,your next tour</h1>
+                    </div>
+                </div>
+            </div>
+            <p id="destination_1">Top destinations In India </p>
+            <div class="destinations">
+                <div class="destination_img">
+                    <div id="arrow-left" class="arrow"></div>
+                    <div id="dest_img_1"></div>
+                    <div id="dest_img_2"></div>
+                    <div id="dest_img_3"></div>
+                    <div id="arrow-right" class="arrow"></div>
+                </div>
+            </div>
+            <div class="dest_info">
+                <div id="dest_info_1"><h1 style="font-size:25px;">Taj Mahal</h1><h1 style="font-size:20px;">1243 Accomodations</h1></div>
+                <div id="dest_info_2"><h1 style="font-size:25px;">Mysore Palace</h1><h1 style="font-size:20px;">784 Accomodations</h1></div>
+                <div id="dest_info_3"><h1 style="font-size:25px;">Ram Mandir</h1><h1 style="font-size:20px;">5432 Accomodations</h1></div>
+            </div>
+            <p id="homes_1">Featured homes recommended for you</p>
+            <div id="homes_links">
+            <div class="homes">
+                <div class="row_1">
+                       <div id="homes_img_1"></div>
+                       <div id="homes_img_2"></div>
+                       <div id="homes_img_3"></div>
+                       <div id="homes_img_4"></div>
+                </div>
+                <div class="row_1_con">
+                    <div id="con_1"><h1 style="font-size:20px;">Farm & Pool Party</h1><span class="rating">⭐⭐⭐</span>
+                    <a href="https://www.bing.com/maps?osid=730c7fab-0d6e-455d-b01f-8f08d5722a02&cp=28.614116~76.969952&lvl=10.51&pi=0&imgid=4fd5e102-a67f-4881-a7c7-6335a4ec3bd6&v=2&s
+                              V=2&form=S00027">New Delhi</a> <button class="row_btn">Book Now</button></div>
+                    <div id="con_2"><h1 style="font-size:20px;">Mamata Residency Inn</h1><span class="rating">⭐⭐</span>
+                     <a href="https://www.bing.com/maps?osid=802b9427-98b9-480c-9eb4-483c79ebee5f&cp=12.97951~77.336647&lvl=10.42&pi=0&imgid=0c225b2a-669d-4bd0-8a82-6bda885f7f
+                             6f&v=2&sV=2&form=S00027">Bengaluru</a> <button class="row_btn">Book Now</button></div>
+                    <div id="con_3"><h1 style="font-size:20px;">Collection o Hotel Vintage</h1><span class="rating">⭐⭐⭐⭐</span>
+                    <a href="https://www.bing.com/maps?osid=af16e053-94da-4f5f-9430-de105594e4be&cp=17.361523~78.115077&lvl=9.92&pi=0&imgid=d5d1b50f-47c8-499a-8e4b-ab0559bed3bd
+                             &v=2&sV=2&form=S00027">Hyderabad</a> <button class="row_btn">Book Now</button></div>
+                    <div id="con_4"><h1 style="font-size:20px;">Richa's home</h1><span class="rating">⭐⭐</span>
+                    <a href="https://www.bing.com/maps?osid=2757f694-2d9a-46d6-b247-17a7afdc3708&cp=13.082686~80.06395&lvl=10.69&pi=0&imgid=90110892-a688-4c0e-9cd4-6d9fbd5850ba&v=2
+                             &sV=2&form=S00027">Chennai</a> <button class="row_btn">Book Now</button></div>
+                </div>
+                <div class="row_2">
+                       <div id="homes_img_5"></div>
+                       <div id="homes_img_6"></div>
+                       <div id="homes_img_7"></div>
+                       <div id="homes_img_8"></div>
+                </div>
+                <div class="row_2_con">
+                <div id="con_5"><h1 style="font-size:20px;">Red Mapple Hotel</h1><span class="rating">⭐⭐⭐⭐</span>
+                <a href="https://www.bing.com/maps?osid=bacb692f-c7c3-4a49-ab27-f9a698635181&cp=19.075747~72.717656&lvl=11.09&pi=0&imgid=518ef809-ac33-48ad-a5c9-cc43c89
+                         96a34&v=2&sV=2&form=S00027">Mumbai</a> <button class="row_btn" onclick="bookNow">Book Now</button></div>
+                <div id="con_6"><h1 style="font-size:20px;">Townhouse</h1><span class="rating">⭐⭐⭐</span>
+                <a href="https://www.bing.com/maps?osid=4fc0c353-3e52-438b-abc3-71f5aca3ea20&cp=25.318863~82.951839&lvl=12.48&pi=0&imgid=07e54124-daa5-4042-8ed9-6bbb59219
+                         e13&v=2&sV=2&form=S00027">Varanasi</a> <button class="row_btn">Book Now</button></div>
+                <div id="con_7"><h1 style="font-size:20px;">Hotel o'Hume</h1><span class="rating">⭐⭐⭐⭐</span>
+                <a href="https://www.bing.com/maps?osid=c4bf3459-3e02-45ef-ab76-9d5a614a3b07&cp=18.519569~73.760193&lvl=11.84&pi=0&imgid=85a6cb8b-9369-4029-a5e8-0c43969e7c52&
+                         v=2&sV=2&form=S00027">Pune</a> <button class="row_btn">Book Now</button></div>
+                <div id="con_8"><h1 style="font-size:20px;">Bar & Restuarant</h1><span class="rating">⭐⭐⭐⭐⭐</span>
+                <a href="https://www.bing.com/maps?osid=d667f8a0-ef54-4e3f-ab9d-ae0f1557a947&cp=15.401878~73.635769&lvl=9.74&pi=0&imgid=675dd831-6dd0-4437-b559-7d28d50bc84c&v=2&sV
+                         =2&form=S00027">Goa</a> <button class="row_btn">Book Now</button></div></div>
+            </div>
+          </div>
+            <div><button id="See_more">See more(New Delhi and NCR Properties)</button></div>
+            <p id="homes_1">Flights & Activities Promotions</p>
+            <div class="Promotions">
+                  <div id="Promotions_img_1"></div>
+                  <div id="Promotions_img_2"></div>
+                  <div id="Promotions_img_3"></div>
+            </div>
+            <p id="homes_1">Transport</p>
+            <div class="Transportation">
+               
+            </div>
+        </div>
+        <!--CONTACT --WITH--US-->
+        <!--Footer-->
+        <p id="homes_1">---Contact Us---</p>
+        <div class="Contact"id="C_1">
+            <div id="contact_01"></div>
+            <div id="contact_02">
+                <form>
+                    <label>Name:</label><br><br>
+                    <input type="text"placeholder="Name"class="form_1"><br><br>
+                    <label>Email:</label><br><br>
+                    <input type="text"placeholder="Email"class="form_1"><br><br>
+                    <label>Phone:</label><br><br>
+                    <input type="text"placeholder="Phone"class="form_1"><br><br>
+                    <label>Place:</label><br><br>
+                    <input type="text"placeholder="Place"class="form_1"><br><br>
+                    <textarea rows="6"style="margin-left:30px;margin-top:20px;">Message</textarea>
+                    <button style="background-color: rgb(33, 33, 33);width:300px;color:whitesmoke;height:30px;
+                    margin-top:5px;margin-left:20px;">SEND</button>
+                </form>
+            </div>
+        </div>
+        <p><a href="#Main"style="margin-left:740px;">Skip to main page</a></p>
+        <div class="footer">
+            <div class="All_links">
+            <div id="quick">
+                <h3 style="font-family:fantasy;font-size:25px;font-weight: lighter;">Quick links</h3><br><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_1">Offers & Discounts</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_2">Get Cupon</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_3">Contact Us</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_4">About Us</p><br>
+            </div>
+            <div id="New_Products">
+                <h3 style="font-family:fantasy;font-size:25px;font-weight: lighter;">New Products</h3><br><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_5">Women Cloth</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_6">Fashion Accessories</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_7">Man Accessories</p><br>
+                <p style="font-size:18px;font-family:cursive;"id="p_8">Rubber made toys</p><br>
+            </div>
+            <div id="People">
+            <h3 style="font-family:fantasy;font-size:25px;font-weight: lighter;">Support</h3><br><br>
+            <p style="font-size:18px;font-family:cursive;"id="p_9">FAQ</p><br>
+            <p style="font-size:18px;font-family:cursive;"id="p_10">Report & Payment issue</p><br>
+            <p style="font-size:18px;font-family:cursive;"id="p_11">Terms & Conditions</p><br>
+            <p style="font-size:18px;font-family:cursive;"id="p_12">Privacy Policy</p><br>
+            </div>
+            </div>
+            <div class="follow">
+                    <p id="suggest">CONNECT WITH US ON:</p>
+                    <p id="follow_1">Instagram:<i class="fa-brands fa-instagram"></i></p>
+                    <p id="follow_2">Youtube:<i class="fa-brands fa-youtube"></i></p>
+                    <p id="follow_3">Meta:<i class="fa-brands fa-meta"></i></p>
+                    <p id="follow_4">Twitter:<i class="fa-brands fa-twitter"></i></p>
+                    <p id="follow_5">Linkedin:<i class="fa-brands fa-linkedin"></i></p>
+                    <p id="follow_6">Download the app on:<i class="fa-brands fa-google-play"></i></p>
+            </div>
+        </div>
+    </div>
+    <script src="Phase_2.js"></script>
+</body>
+</html>

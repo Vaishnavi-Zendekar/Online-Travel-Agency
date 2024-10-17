@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet"href="Phase_2.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h2 id="h_1">Select the payment method</h2>
+    <div class="Payment">
+        <div id="top_1">
+            <p id="t_1">Your available balance</p><hr>
+            <div id="top_2">
+                <i class="fa-solid fa-plus" style="font-size:20px;opacity:0.5;"></i>
+                <input type="text"placeholder="Enter code"id="input_1">
+                <button id="b_1">Apply</button>
+                <div id="top_3">
+                    <p id="t_2">Other payment methods</p><hr>
+                </div>
+            </div>
+            <div id="top_4">
+                <input type="radio"><p id="t_3">Credit or Debit cards</p>
+            </div>
+            <div id="cards">
+                <i class="fa-brands fa-cc-visa" style="font-size:30px;"></i>
+                <i class="fa-solid fa-credit-card" style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-mastercard" style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-amazon-pay" style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-paypal" style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-apple-pay" style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-discover"style="font-size:30px;"></i>
+                <i class="fa-brands fa-cc-jcb"style="font-size:30px;"></i>
+            </div>
+            <div id="Net_Bank">
+                <input type="radio"id="radio_1"><h3 id=n_1>Net Banking</h3>
+             </div>
+                <div id="Net_select">
+                    <select>
+                        <option>Choose an option</option>
+                        <option>Airtel Payments Bank</option>
+                        <option>AXIS Bank</option>
+                        <option>Kotak  Bank</option>
+                        <option>State Bank of India</option>
+                        <option>HDFC Bank</option>
+                        <option>ICICI Bank</option>
+                    </select>
+                </div>
+                <div id="Other">
+                    <input type="radio"id="radio_1"><h3 id=n_1 >Other UPI Apps</h3> 
+                </div>
+                <div id="EMI">
+                    <input type="radio"id="radio_1"><h3 id=n_1>EMI</h3> 
+                </div>
+                <div id="COD">
+                    <input type="radio"id="radio_1"><h3 id=n_1>Cash on delivery/Pay on delivery</h3>
+                      <br><p style="margin-top:20px;margin-left:-250px;">Cash, UPI and Cards accepted.</p>
+                </div>
+                <div id="end">
+                    <button id="b_2">Use this payment method</button>
+                </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,739 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+nav{
+    height:80px;
+    width:100%;
+    background-color:#0f172a;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+.logo{
+    height:60px;
+    width:80px;
+    background-image:url('logo_1.jpg');
+    background-size: cover;
+}
+#select_1{
+    font-size:20px;
+}
+#select_2{
+    font-size:20px;
+}
+.search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search:hover{
+    border:5px solid black;
+}
+#Search_1{
+    font-size:20px;
+    font-weight: bold;
+    background-color:white;
+    text-align: center;
+    padding-top:2px;
+    width:30px;
+    height:27px;
+    margin-top:2px;
+}
+#Search_2{
+    height:26px;
+    width:210px;
+}
+/*---LOGIN---POPUP---*/
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    top:60px;
+    right:300px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgba(33, 32, 32, 0.5);
+  }
+  .form-container input[type=text], .form-container input[type=password] {
+    width:250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+#one{
+    height:30px;
+    width:60px;
+    font-weight: bold;
+    font-size:15px;
+    border-radius:5%;
+}
+#one:hover{
+    cursor:pointer;
+    background-color: rgb(82, 82, 246);
+}
+#two{
+    height:30px;
+    width:80px;
+    font-weight: bold;
+    font-size:15px;
+    border-radius:5%;
+}
+#two:hover{
+    cursor:pointer;
+    background-color: rgb(82, 82, 246);
+}
+#three{
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+}
+#contact_1{
+    height:27px;
+    color:white;
+}
+.cart{
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    width:30px;
+    height:27px;
+}
+#link_1{
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+}
+/*---Creating Main Page--*/
+#slideshow{
+    overflow:hidden;
+    height:510px;
+    width:1400px;
+    margin-top:15px;
+    margin-left:60px;
+}
+.slide{
+    float:left;
+    height:510px;
+    width:1400px;
+}
+.slide-wrapper{
+    width:calc(1400px*5);
+    animation:slide 14s ease infinite;
+}
+.slide:nth-child(1){
+    background-image:url('https://www.museuly.com/wp-content/uploads/2018/06/image002.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
+.slide:nth-child(2){
+    background-image:url('https://qph.fs.quoracdn.net/main-qimg-f994ac0a6bb0654ed85da7536bcf1bda');
+    background-size: cover;
+    object-fit:cover;
+}
+.slide:nth-child(3){
+    background-image:url('https://static2.tripoto.com/media/transfer/img/OgData/finalkhajjiar.jpg');
+    background-size:cover;
+    object-fit: cover;
+}
+.slide:nth-child(4){
+    background-image:url('https://blogs.indiatailormade.com/wp-content/uploads/2018/11/shore-temple-640319518-58e3eaf25f9b58ef7e113e1f.jpg');
+    background-size:cover;
+    object-fit: cover;
+}
+.slide:nth-child(5){
+    background-image:url('https://pragativadi.com/wp-content/uploads/2022/11/best-places-to-visit-in-may-in-south-india.png');
+    background-size: cover;
+    object-fit:cover;
+}
+@keyframes slide{
+    20%{
+        margin-left:0px;
+    }
+    40%{
+        margin-left:calc(-1400px*1);
+    }
+    60%{
+        margin-left:calc(-1400px*2);
+    }
+    80%{
+        margin-left:calc(-1400px*3);
+    }
+    100%{
+        margin-left:calc(-1400px*4);
+    }
+}
+#slide_1{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow :5px 5px red;
+}
+#slide_2{
+    text-align:center;
+    color:rgb(241, 86, 86);
+    font-size:40px;
+    text-shadow :5px 5px white;
+}
+#slide_3{
+    text-align:center;
+    color:black;
+    font-size:40px;
+    text-shadow :5px 5px white;
+}
+#slide_4{
+    text-align:center;
+    color:lightgray;
+    font-size:40px;
+    text-shadow :10px 10px black;
+}
+#slide_5{
+    text-align:center;
+    color:#e5ed16;
+    font-size:40px;
+    font-family:URW Chancery L, cursive;
+    text-shadow :10px 10px purple;
+}
+/*---Top--Destinations--In--India--*/
+.destinations{
+    height:350px;
+    width:1507px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#destination_1{
+    font-size:35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+.destination_img{
+    height:330px;
+    width:1100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#dest_img_1{
+    height:328px;
+    width:330px;
+    border:2px solid black;
+    background-image:url('https://wallpapercave.com/wp/wp2037801.jpg');
+    background-size: cover;
+}
+#dest_img_1:hover
+{
+    padding:10px;
+}
+#dest_img_2{
+    height:328px;
+    width:330px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th/id/OIP.rwpS9-IYqisGusGcNJUL8AHaE9?rs=1&pid=ImgDetMain');
+    background-size: cover;
+}
+#dest_img_2:hover
+{
+    padding:10px;
+}
+#dest_img_3{
+    height:328px;
+    width:330px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th?id=OIP.EVesUt8bcQspHTOrUDkwwgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+    background-size: cover;
+}
+#dest_img_3:hover
+{
+    padding:10px;
+}
+.dest_info{
+    height:60px;
+    width:1050px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: cadetblue;
+    margin-left:220px;
+}
+#dest_info_1{
+    display:block;
+}
+#dest_info_2{
+    display:block;
+}
+#dest_info_3{
+    display:block;
+}
+/*--Featured Homes Recommended For You----*/
+#homes_1{
+    font-size:35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    margin-top:15px;
+}
+.homes{
+    height:500px;
+    width:1100px;
+    margin-left:200px;
+}
+.row_1{
+    margin-top:20px;
+    height:160px;
+    width:1100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#homes_img_1{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th?id=OIP.yBlW3ZDDa6z5cctJs8rpggHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+    background-size:cover;
+}
+#homes_img_2{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th/id/OIP.RcdUIw9Oh6FaMUCptbQjNAHaEo?w=306&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size:cover;
+}#homes_img_3{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th/id/OIP.x1lNntN6_AQS3H8A2xNUBwHaFS?w=230&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size:cover;
+}#homes_img_4{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th/id/OIP.tBbXE2RgX3gS2p6WEiWFIgHaEq?pid=ImgDet&w=206&h=129&c=7&dpr=1.3');
+    background-size:cover;
+}
+.row_1_con{
+    margin-top:10px;
+    height:50px;
+    width:1100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#con_3{
+    margin-left:-50px;
+}
+#con_4{
+    margin-left:-50px;
+}
+.row_2{
+    margin-top:20px;
+    height:160px;
+    width:1100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.row_2_con{
+    margin-top:10px;
+    height:50px;
+    width:1100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#homes_img_5{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th/id/OIP.lLmJ05dhW-9XlA9lJQjkhwHaE7?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size:cover;
+}#homes_img_6{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th?id=OIP.yOOn3zbhZgJFhYmyj4Tj7gHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+    background-size:cover;
+}#homes_img_7{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th?id=OIP.V36tZS6jQ2pPQ_ZRMnK2UgHaEy&w=311&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+    background-size:cover;
+}#homes_img_8{
+    height:160px;
+    width:210px;
+    border:2px solid black;
+    background-image:url('https://th.bing.com/th?id=OIP.YqE8JD9_Z1otIMh3Lz_eZQHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
+    background-size:cover;
+}
+#con_5{
+    margin-left:-25px;
+}
+.row_btn{
+   
+    background-color:rgb(246, 85, 85);
+    font-size:15px;
+    border: radius 10%;
+    font-weight: bold;
+}
+.row_btn:hover{
+    opacity:0.5;
+}
+/*--SEE--MORE--*/
+#See_more{
+    text-align: center;
+    margin-left:600px;
+    background-color:#0284c7;
+    font-size:15px;
+    color:white;
+    height:40px;
+    width:300px;
+    border-radius:6%;
+    border:none;
+    font-weight:700;
+}
+#See_more:hover{
+    cursor:pointer;
+    opacity:0.8;
+    border:2px solid black;
+    box-shadow:0.2em;
+}
+/*--Accomodations And Promotions---*/
+.Promotions{
+    height:250px;
+    width:1400px;
+    margin-left:60px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Promotions_img_1{
+    height:190px;
+    width:400px;
+    background-image:url('https://cdn0.agoda.net/images/blt2/wcActivitiesDD-NV-20240126/Web/en-us.png');
+    background-size:cover;
+    border-radius:10%;
+}
+#Promotions_img_2{
+    height:190px;
+    width:400px;
+    background-image:url('https://cdn0.agoda.net/images/blt2/wcFlightsEvergreenRebrand/Desktop/en-us/Evergreen_20230712.png');
+    background-size:cover;
+    border-radius:10%;
+}
+#Promotions_img_3{
+    height:190px;
+    width:400px;
+    background-image:url('https://cdn0.agoda.net/images/blt2/wcFlightsNA20230713/Desktop/en-us/Newacq_20230713.png');
+    background-size:cover;
+    border-radius:10%;
+}
+/*--Train--Booking--*/
+.Transportation{
+    height:320px;
+    width:1320px;
+    margin-left:100px;
+    border-radius:2%;
+    background-image:url('https://cdn.zoutons.com/images/originals/blog/MakeMyTrip3_1647517851.png');
+    background-size:cover;
+    object-fit:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--CONTACT WITH US--*/
+.Contact{
+    height:500px;
+    width:650px;
+    margin:15px;
+    margin-left:500px;
+    background-color:rgb(24, 24, 24,0.4);
+    display:flex;
+    box-shadow: 10px 10px;
+}
+#contact_01{
+    height:500px;
+    width:320px;
+    background-image: url('https://th.bing.com/th/id/OIP.axEVkNXAtlIgHhST0jgLogHaF2?rs=1&pid=ImgDetMain');
+    background-size:cover;
+    object-fit: cover;
+}
+#contact_02{
+    height:500px;
+    width:330px;
+    background-color: #fed7aa;
+}
+.form_1{
+    height:25px;
+    width:200px;
+    margin-left:20px;
+}
+.form_1:hover{
+    border:2px solid #0284c7;
+}
+/*--CREATING--FOOTER--*/
+.footer
+{
+   margin-top:20px;
+   margin-left:10px;
+   height:400px;
+   width:1500px;
+   background-image:url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/fiery-sunset-at-lake-dora-susan-rydberg.jpg');
+   background-size: cover;
+}
+.All_links{ 
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+}
+#quick{
+    margin-top:25px; 
+    height:280px;
+    width:250px;
+    background-color:rgb(24, 24, 24,0.4);
+    text-align:center;
+}
+#New_Products{
+    margin-top:25px; 
+    height:280px;
+    width:250px;
+    background-color: rgb(24, 24, 24,0.4);
+    text-align:center;
+}
+#People{
+    margin-top:25px; 
+    height:280px;
+    width:250px;
+    background-color:rgb(24, 24, 24,0.4);
+    text-align:center;
+    color:#0f172a;
+}
+.follow{
+    margin-top:50px;
+    height:40px;
+    width:1507px;
+    background-color: #58ffec;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.follow:hover{
+    cursor:pointer;
+}
+#p_1:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}#p_2:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_3:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_4:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_5:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_6:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_7:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_8:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_9:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_10:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_11:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+#p_12:hover{
+    cursor: pointer;
+    background-color:blue;
+    padding:5px;
+}
+/*---PAYMENT---*/
+.Payment{
+    height:471px;
+    width:586px;
+    border:2px solid gray;
+    margin-top:0px;
+    margin-top:30px;
+    margin-left:500px;
+    box-shadow:10px 10px;
+}
+#h_1{
+    text-align: center;
+    color:#c2410c;
+    font-family:'Courier New', Courier, monospace;
+    margin-top:8px;
+}
+#top_1{
+    height:40px;
+    width:586px;
+}
+#t_1{
+    font-size:25px;
+}
+#top_2{
+    height:75px;
+    width:586px;
+}
+#input_1{
+    margin-top:12px;
+    margin-left:8px;
+    height:22px;
+    border-radius: 5%;
+    width:200px;
+    font-size:16px;
+    font-weight: bold;
+}
+#b_1{
+    height:25px;
+    width:60px;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow :10px 15px 5px white;
+    background-color:white;
+    font-weight: 700;
+}
+#b_1:hover{
+    background-color: rgb(128, 244, 248);
+    opacity:0.4;
+}
+#t_2{
+    font-weight: 800;
+    font-size:22px;
+    margin-top:10px;
+}
+#top_4{
+    margin-top:12px;
+    font-size:20px;
+    font-weight: 700;
+    margin-left:10px;
+    display:flex;
+}
+input[type=radio] {
+    border:0px;
+    width:10px;
+    height:10px;
+    color:blue;
+    margin-top:5px;
+}
+#t_3{
+    margin-left:10px;
+    font-size:18px;
+}
+#cards{
+    height:60px;
+    width:500px;
+    background-color: pink;
+    margin-left:40px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Net_Bank{
+    margin-top:25px;
+    height:30px;
+    display:flex;
+    margin-left:20px;
+}
+#radio_1[type=radio]
+{
+    height:14px;
+    width:14px;
+    font-size: medium;
+    font-weight:bold;
+}
+#n_1{
+    margin-left:10px;
+}
+#Net_select{
+    margin-left:20px;
+    height:20px;
+}
+#Other,#EMI,#COD{
+    margin-left:20px;
+    display:flex;
+    margin-top:15px;
+}
+#end{
+    height:60px;
+    background-color:rgba(18, 18, 18, 0.5);
+    margin-top:11px;
+}
+#b_2{
+    width:210px;
+    background-color: #f6da25;
+    border-radius:5%;
+    font-size:medium;
+    font-family:cursive;
+    font-weight: 700;
+    margin-top:20px;
+}
